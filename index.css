@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@500&family=Fredoka:wght@500&family=Inter:wght@500;700&family=Oswald:wght@700&family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main_color: #9E00FF;
+}
+
+body{
+    font-family: poppins;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(10,10,10,0.9), rgba(10,10,10,0.9)), url(quizbgimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.greet_msg{
+    color: white;
+    font-size: 70px;
+    padding: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.greet_msg span{
+    color: #45f3ff;
+}
+
+.all_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 600px;
+}
+
+.card{
+    width: 600px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0.5px grey;
+}
+
+.question{
+    text-align: center;
+}
+
+.my_ques{
+    font-weight: normal;
+    font-size: 22px;
+    padding: 10px;
+    padding-top: 15px;
+}
+
+.opt_icon{
+    color: white;
+    font-size: 25px;
+    margin: 0px 5px 0px;
+    transition: 0.3s;
+}
+
+.my_option:hover .opt_icon{
+    color: var(--main_color);   
+}
+
+.my_option{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    transition: 0.3s;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+}
+
+.my_option:hover{
+    border-bottom: 2px solid var(--main_color);
+}
+
+.option{
+    margin: 0px 10px 0px 5px;
+}
+
+.button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.my_buttons{
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--main_color);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: poppins;
+    transition: 0.4s;
+}
+
+.my_buttons:hover{
+    transform: scale(1.02);
+}
+
+.btn_icon{
+    margin: auto 5px;
+    font-size: 20px;
+}
+
+.toggle_ques{
+    font-size: 60px;
+    color: #45f3ff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1025px){
+    .greet_msg{
+        font-size: 60px;
+        padding: 10px;
+    }
+
+    .all_items, .card{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .greet_msg{
+        font-size: 50px;
+    }
+
+    .all_items, .card{
+        width: 475px;
+    }
+
+    .button{
+        flex-direction: column;
+    }
+
+    .my_buttons{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .greet_msg{
+        font-size: 40px;
+    }
+
+    .all_items, .card{
+        width: 425px;
+    }
+
+    .my_buttons{
+        width: 100px;
+        font-size: 17px;
+    }
+
+    .btn_icons{
+        font-size: 17px;
+    }
+
+    .my_ques{
+        font-size: 18px;
+        padding: 5px;
+        padding-top: 10px;
+    }
+
+    .my_option label{
+        font-size: 17px;
+    }
+
+    .toggle_ques{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 481px){
+    .greet_msg{
+        font-size: 35px;
+    }
+
+    .all_items, .card{
+        width: 400px;
+    }
+
+    .my_buttons{
+        width: 85px;
+        font-size: 15px;
+    }
+
+    .btn_icon{
+        font-size: 15px;
+    }
+
+    .my_ques{
+        font-size: 16px;
+        padding: 5px;
+        padding-top: 10px;
+    }
+
+    .my_option label{
+        font-size: 15px;
+    }
+
+    .toggle_ques{
+        font-size: 40px;
+    }
+}

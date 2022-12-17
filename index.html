@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizalizer</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <!--Greeting Message-->
+        <div class="greet">
+            <h2 class="greet_msg">Welcome to <span>Quizalizer</span></h2>
+        </div>
+
+        <!--All items container starts-->
+        <div class="all_items">
+            <div class="prev" id="prev">
+                <i id="prev_ques" class="uil uil-previous toggle_ques" onclick="showPrevQues()"></i>
+            </div>
+            <div class="card" id="card">
+                <div class="question">
+                    <h2 id="quesBox" class="my_ques">When was JAVA introduced?</h2>
+                </div>
+    
+                <div class="all_options">     
+                    <div class="my_option">
+                        <span><i class="uil uil-arrow-circle-right opt_icon"></i></span>
+                        <input type="radio" id="option1" class="option" value="a" name="option">
+                        <label for="option1">1995</label>
+                    </div>
+    
+                    <div class="my_option">
+                        <span><i class="uil uil-arrow-circle-right opt_icon"></i></span>
+                        <input type="radio" id="option2" class="option" value="b" name="option">
+                        <label for="option2">1996</label>
+                    </div>
+    
+                    <div class="my_option">
+                        <span><i class="uil uil-arrow-circle-right opt_icon"></i></span>
+                        <input type="radio" id="option3" class="option" value="c" name="option">
+                        <label for="option3">1990</label>
+                    </div>
+    
+                    <div class="my_option">
+                        <span><i class="uil uil-arrow-circle-right opt_icon"></i></span>
+                        <input type="radio" id="option4" class="option" value="d" name="option">
+                        <label for="option4">1992</label>
+                    </div>
+    
+                    <div class="button">
+                        <button id="reset_button" class="my_buttons" onclick="resetAll()">Reset<i class="uil uil-redo btn_icon"></i></button>
+                        <button id="clear_button" class="my_buttons" onclick="clearAll()">Clear<i class="uil uil-minus-circle btn_icon"></i></button>
+                        <button id="submit_button" class="my_buttons" onclick="submitQues()">Save<i class="uil uil-message btn_icon"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="next" id="next">
+                <i id="next_ques" class="uil uil-step-forward toggle_ques" onclick="showNextQues()"></i>
+            </div>
+        </div>
+        <!--All items container ends-->
+    </div>
+</body>
+</html>
